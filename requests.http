@@ -1,0 +1,28 @@
+
+### Products index
+GET http://localhost:3000/products.json
+
+### Products show
+GET http://localhost:3000/products/1.json
+
+### Products create
+POST http://localhost:3000/products.json
+Content-Type: application/json
+
+{
+    "name": "Bitcoin hardware wallet",
+    "price": 40, 
+    "description": "Safely store your crypto",
+    "image_url": "https://www.ledger.com/wp-content/uploads/2022/08/BackupPack2022.png"
+}
+
+### Products destroy 
+DELETE http://localhost:3000/products/9.json
+
+### Products patch
+PATCH http://localhost:3000/products/11.json
+Content-Type: application/json
+
+{
+    "price": 5 
+}
