@@ -9,9 +9,11 @@ class ProductsController < ApplicationController
       name: params["name"],
       price: params["price"],
       description: params["description"],
+      supplier_id: params[:supplier_id],
     )
     @product.save
     if @product.valid?
+      Image.create(url: params[:image_url], product_id: @product.id)
       render template: "products/show"
     else
       render json: { message: "Hey something went wrong", errors: @product.errors.full_messages }, status: :unprocessable_entity
