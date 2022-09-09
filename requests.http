@@ -1,6 +1,27 @@
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
 
 ### Products index
 GET http://localhost:3000/products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI3NzIyOTZ9.Tr_B69J06Kn8N4sQXPSz3ph0uM4PFIUMfDB0SN6sE9w
 
 ### Products show
 GET http://localhost:3000/products/12.json
@@ -12,7 +33,8 @@ Content-Type: application/json
 {
     "name": "Adidas Arsenal Away Jersey",
     "price": 89, 
-    "description": "Arsenal Away Jersey for the 2022/23 soccer season!"
+    "description": "Arsenal Away Jersey for the 2022/23 soccer season!", 
+    "image_url": "https://images.dickssportinggoods.com/is/image/GolfGalaxy/21ADIMCSRS22WRPJSATH?qlt=70&wid=600&fmt=webp",
     
 }
 

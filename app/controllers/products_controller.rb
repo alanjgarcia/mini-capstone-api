@@ -1,5 +1,7 @@
 class ProductsController < ApplicationController
   def index
+    puts "Am I logged in?"
+    pp current_user
     @products = Product.all
     render template: "products/index"
   end
