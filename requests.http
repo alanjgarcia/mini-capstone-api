@@ -21,7 +21,7 @@ Content-Type: application/json
 
 ### Products index
 GET http://localhost:3000/products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI3NzIyOTZ9.Tr_B69J06Kn8N4sQXPSz3ph0uM4PFIUMfDB0SN6sE9w
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjMxMTE4MjR9.xDAPOtpew-jUWJhQeXUqNK6CnJnOocv7F8sH8mQ2hW0
 
 ### Products show
 GET http://localhost:3000/products/12.json
@@ -52,7 +52,7 @@ Content-Type: application/json
 
 ### ORDERS CREATE ###
 POST http://localhost:3000/orders.json 
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjI5OTg4MDZ9.ygQZITSvrhWdpJ7I0fTl29FJRstSPjRG02cKt_CSZQk"
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjMxMTE4MjR9.xDAPOtpew-jUWJhQeXUqNK6CnJnOocv7F8sH8mQ2hW0
 Content-Type: application/json
 
 {
@@ -64,11 +64,11 @@ Content-Type: application/json
 
 ### ORDERS SHOW ### 
 GET http://localhost:3000/orders/1.json 
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjI5OTg4MDZ9.ygQZITSvrhWdpJ7I0fTl29FJRstSPjRG02cKt_CSZQk"
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjMxMTE4MjR9.xDAPOtpew-jUWJhQeXUqNK6CnJnOocv7F8sH8mQ2hW0
 Content-Type: application/json
 
 
 ### ORDERS INDEX ###
 GET http://localhost:3000/orders 
-Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjI5OTg4MDZ9.ygQZITSvrhWdpJ7I0fTl29FJRstSPjRG02cKt_CSZQk"
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjMxMTE4MjR9.xDAPOtpew-jUWJhQeXUqNK6CnJnOocv7F8sH8mQ2hW0
 Content-Type: application/json
