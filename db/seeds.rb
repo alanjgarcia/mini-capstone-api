@@ -38,3 +38,15 @@ image = Image.create!(url: "https://s-media-cache-ak0.pinimg.com/736x/9c/15/7b/9
 image = Image.create!(url: "https://dyn0.media.forbiddenplanet.com/products/28577492.jpg", product_id: 6)
 
 image = Image.create!(url: "https://staticdelivery.nexusmods.com/mods/1151/images/12353-0-1461721930.png", product_id: 7)
+
+Category.create(name: "Weapons")
+
+Category.create(name: "Household")
+
+Category.create(name: "Star Wars")
+
+CategoryProduct.create(category_id: 2, product_id: 1)
+
+CategoryProduct.create(category_id: 1, product_id: 2)
+
+CategoryProduct.create(category_id: 3, product_id: 3)

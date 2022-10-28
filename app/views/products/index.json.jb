@@ -5,6 +5,7 @@
   price: product.price,
   description: product.description,
   images: product.images,
+  categories: product.categories,
   supplier: product.supplier, 
   is_discounted?: product.is_discounted?,
   created_at: product.created_at,

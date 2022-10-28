@@ -1,10 +1,13 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjcwMDQwNTV9.orfadLRdCRcRmXKxCE_mLXf6O8S2VEBXg6Tn1_0PgxY
+
+
 ### Users create (signup)
 POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Nala",
-  "email": "Nala@test.com",
+  "name": "hammer",
+  "email": "hammer@test.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -15,19 +18,20 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "Nala@test.com",
+  "email": "hammer@test.com",
   "password": "password"
 }
 
 ### Products index
 GET http://localhost:3000/products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjMxMTE4MjR9.xDAPOtpew-jUWJhQeXUqNK6CnJnOocv7F8sH8mQ2hW0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NjYzMTI2MzF9.xBWrc23kYpPu-OPBqe8f5Fd3iP78pgfMUYVGtxgr_3w
 
 ### Products show
-GET http://localhost:3000/products/12.json
+GET http://localhost:3000/products/9.json
 
 ### Products create
 POST http://localhost:3000/products.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -40,9 +44,11 @@ Content-Type: application/json
 
 ### Products destroy 
 DELETE http://localhost:3000/products/9.json
+Authorization: Bearer {{jwt}}
 
 ### Products patch
 PATCH http://localhost:3000/products/13.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -52,7 +58,7 @@ Content-Type: application/json
 
 ### ORDERS CREATE ###
 POST http://localhost:3000/orders.json 
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjMxMTE4MjR9.xDAPOtpew-jUWJhQeXUqNK6CnJnOocv7F8sH8mQ2hW0
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -63,12 +69,12 @@ Content-Type: application/json
 
 
 ### ORDERS SHOW ### 
-GET http://localhost:3000/orders/1.json 
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjMxMTE4MjR9.xDAPOtpew-jUWJhQeXUqNK6CnJnOocv7F8sH8mQ2hW0
+GET http://localhost:3000/orders/5.json 
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 
 ### ORDERS INDEX ###
-GET http://localhost:3000/orders 
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjMxMTE4MjR9.xDAPOtpew-jUWJhQeXUqNK6CnJnOocv7F8sH8mQ2hW0
+GET http://localhost:3000/orders.json  
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
